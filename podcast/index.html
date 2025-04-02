@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Mágico | Sailor Moon</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../images/sailor-moon-logo.png" alt="Sailor Moon Logo" class="logo">
+            <h1>Sailor Moon</h1>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
+                <li><a href="index.html" class="nav-link active">Podcast</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content podcast-page">
+        <h2 class="page-title">Podcast Mágico</h2>
+        <p class="page-subtitle">Escucha nuestros episodios analizando la serie</p>
+
+        <div class="episode-container">
+            <article class="episode-card">
+                <img src="../images/banner-podcast.png" alt="Podcast Sailor Moon" class="episode-image">
+                <div class="episode-content">
+                    <h3>Episodio 1: Introducción a Sailor Moon</h3>
+                    <p class="episode-meta"><i class="far fa-calendar-alt"></i> 20 Octubre 2023 | <i class="far fa-clock"></i> 30 min</p>
+                    <p>En este primer episodio analizamos los orígenes de la serie y su impacto cultural en el mundo del anime.</p>
+                    
+                    <div class="audio-player">
+                        <audio controls class="player">
+                            <source src="audio/episodio1.mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    
+                    <div class="episode-links">
+                        <a href="../rss/podcast.rss" class="btn rss-btn">
+                            <i class="fas fa-rss"></i> Suscribirse
+                        </a>
+                        <a href="#" class="btn download-btn">
+                            <i class="fas fa-download"></i> Descargar
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="subscribe-section">
+                <h3>Suscríbete a nuestro podcast</h3>
+                <a href="../rss/podcast.rss" class="rss-link">
+                    <i class="fas fa-podcast"></i> Podcast RSS
+                </a>
+            </div>
+            <p>© 2023 Sailor Moon Fans</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
